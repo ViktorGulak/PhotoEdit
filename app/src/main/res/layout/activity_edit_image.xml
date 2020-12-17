@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent"
+    tools:context=".EditImageActivity">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"/>
+<!--    <Button-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:onClick="Rotate_90"-->
+<!--        android:text="повернуть \nна 90 гр"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="right|bottom"/>-->
+<!--    <Button-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:onClick="Reflect"-->
+<!--        android:text="отразить по\n горизонтале"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="right|bottom"/>-->
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="Rotate_90"
+            android:background="@drawable/ic_baseline_rotate_left_24"
+            android:layout_gravity="center_vertical"/>
+        <Button
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="Rotate_90_Reverse"
+            android:background="@drawable/ic_baseline_rotate_right_24"
+            android:layout_gravity="center_vertical"/>
+        <Button
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="Reflect"
+            android:background="@drawable/ic_baseline_swap_horiz_24"
+            android:layout_gravity="center_vertical"/>
+        <Button
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="Reflect_Reverse"
+            android:background="@drawable/ic_baseline_panorama_horizontal_24"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+</FrameLayout>
